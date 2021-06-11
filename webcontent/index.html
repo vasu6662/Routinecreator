@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>routine-creator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+
+    <div class="jumbotron text-center" style="background : red">
+        <h1>Welcome to Creator13.0</h1>
+        <p>An easy way to create daily routines!</p>
+    </div>
+
+    <div class="container">
+        <form id="entryform" class="form-inline">
+            <input name="activityName" id="activityName" placeholder="activity name" required
+                style="margin: 3px; padding: 5px;"></input>
+            <select id="startTimeHrs" style="margin: 3px; padding: 5px;">
+                <option>starting time (hrs)</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+
+            <select id="startTimeMins" style="margin: 3px; padding: 5px;">
+                <option>starting time (mins)</option>
+                <option>00</option>
+                <option>15</option>
+                <option>30</option>
+                <option>45</option>
+            </select>
+
+            <select id="startTimeAmPm" style="margin: 3px; padding: 5px;">
+                <option>am</option>
+                <option>pm</option>
+            </select>
+
+            <select id="endTimeHrs" style="margin: 3px; padding: 5px;">
+                <option>ending time (hrs)</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+
+            <select id="endTimeMins" style="margin: 3px; padding: 5px;">
+                <option>starting time (mins)</option>
+                <option>00</option>
+                <option>15</option>
+                <option>30</option>
+                <option>45</option>
+            </select>
+
+            <select id="endTimeAmPm" style="margin: 3px; padding: 5px;">
+                <option>am</option>
+                <option>pm</option>
+            </select>
+
+            <button id="addActivityBtn" class="btn btn-primary" style="margin: 3px; padding: 5px;">add activity</button>
+        </form>
+
+
+        <table id="routine-table" class="table table-dark table-hover">
+            <tr>
+                <th>Activity</th>
+                <th> HH </th>
+                <th> MM </th>
+                <th> AM/PM </th>
+                <th> HH </th>
+                <th> MM </th>
+                <th> AM/PM </th>
+            </tr>
+        </table>
+
+
+
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button onclick="window.print()" class="btn btn-outline-primary">Print this page</button>
+    </div>
+
+
+
+
+
+
+
+
+    
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">ROUTINE CREATOR v1.0</h5>
+                    <p>
+                        This is a simple application which may be used to create daily routines and save it the form of a .pdf document. 
+                        Use the above form to enter activities and add them using the add activity button. The table will be populated with the entries every time the submit button is clicked
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-dark">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-dark">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+</body>
+
+</html>
